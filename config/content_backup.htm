@@ -36,8 +36,169 @@
 <p>SOLIDWORKS應用程序編程接口（API）是SOLIDWORKS軟件的COM編程接口。</p>
 <p><span>和操作使用軟件本身的功能一樣，屬於應用手法的一種。一般的操作是：通過鼠標點擊，鍵盤鍵入數字操作它現有的按鈕，命令；而API 則是通過編程語言代碼，對現有的功能進行一定的控制，形成新的命令或功能，即利用編程代碼來操控軟件的現有功能</span></p>
 <p>該API包含數百種函數，您可以從Visual Basic（VB），Visual Basic for Applications（VBA），VB.NET，C ++，C＃或SOLIDWORKS宏文件中調用。</p>
-<h2><span>W6</span></h2>
 <h2><span>W7</span></h2>
+<h3><span>工程師的特質(Engineer)</span></h3>
+<p><span>工程師兩大特質</span></p>
+<p><span>1.具有創造性(creat)</span></p>
+<p><span>2.聰明精巧</span></p>
+<h3><span>利用SciTE編輯器類解釋ANSI C程式</span></h3>
+<p><span>1.下載 <a href="http://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip">tcc-0.9.27-win64-bin.zip</a></span></p>
+<p><span>2. 修改start.bat的路徑</span></p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_549694">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">set path_portablegit=%Disk%:\Portablegit\bin;</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">set path_julia=%Disk%:\julia-1.5.2\bin;</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">set path_tcc=%Disk%:\tcc\;</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"><code class="js plain">path=%Disk%:;%path_python%;%path_portablegit%;%path_julia%;%path_tcc%;%path%;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>3.修改完成後重啟並打開</p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">Tiny C Compiler 0.9.27 - Copyright (C) 2001-2006 Fabrice Bellard</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">Usage: tcc [options...] [-o outfile] [-c] infile(s)...</code></div>
+<div class="line number3 index2 alt2"><code class="js spaces">       </code><code class="js plain">tcc [options...] -run infile [arguments...]</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">General options:</code></div>
+<div class="line number5 index4 alt2"><code class="js spaces">  </code><code class="js plain">-c          compile only - generate an object file</code></div>
+<div class="line number6 index5 alt1"><code class="js spaces">  </code><code class="js plain">-o outfile  set output filename</code></div>
+<div class="line number7 index6 alt2"><code class="js spaces">  </code><code class="js plain">-run        run compiled source</code></div>
+<div class="line number8 index7 alt1"><code class="js spaces">  </code><code class="js plain">-fflag      set or reset (</code><code class="js keyword">with</code> <code class="js string">'no-'</code> <code class="js plain">prefix) </code><code class="js string">'flag'</code> <code class="js plain">(see tcc -hh)</code></div>
+<div class="line number9 index8 alt2"><code class="js spaces">  </code><code class="js plain">-Wwarning   set or reset (</code><code class="js keyword">with</code> <code class="js string">'no-'</code> <code class="js plain">prefix) </code><code class="js string">'warning'</code> <code class="js plain">(see tcc -hh)</code></div>
+<div class="line number10 index9 alt1"><code class="js spaces">  </code><code class="js plain">-w          disable all warnings</code></div>
+<div class="line number11 index10 alt2"><code class="js spaces">  </code><code class="js plain">-v -vv      show version, show search paths or loaded files</code></div>
+<div class="line number12 index11 alt1"><code class="js spaces">  </code><code class="js plain">-h -hh      show </code><code class="js keyword">this</code><code class="js plain">, show more help</code></div>
+<div class="line number13 index12 alt2"><code class="js spaces">  </code><code class="js plain">-bench      show compilation statistics</code></div>
+<div class="line number14 index13 alt1"><code class="js spaces">  </code><code class="js plain">-           use stdin pipe as infile</code></div>
+<div class="line number15 index14 alt2"><code class="js spaces">  </code><code class="js plain">@listfile   read arguments from listfile</code></div>
+<div class="line number16 index15 alt1"><code class="js plain">Preprocessor options:</code></div>
+<div class="line number17 index16 alt2"><code class="js spaces">  </code><code class="js plain">-Idir       add include path </code><code class="js string">'dir'</code></div>
+<div class="line number18 index17 alt1"><code class="js spaces">  </code><code class="js plain">-Dsym[=val] define </code><code class="js string">'sym'</code> <code class="js keyword">with</code> <code class="js plain">value </code><code class="js string">'val'</code></div>
+<div class="line number19 index18 alt2"><code class="js spaces">  </code><code class="js plain">-Usym       undefine </code><code class="js string">'sym'</code></div>
+<div class="line number20 index19 alt1"><code class="js spaces">  </code><code class="js plain">-E          preprocess only</code></div>
+<div class="line number21 index20 alt2"><code class="js plain">Linker options:</code></div>
+<div class="line number22 index21 alt1"><code class="js spaces">  </code><code class="js plain">-Ldir       add library path </code><code class="js string">'dir'</code></div>
+<div class="line number23 index22 alt2"><code class="js spaces">  </code><code class="js plain">-llib       link </code><code class="js keyword">with</code> <code class="js plain">dynamic or static library </code><code class="js string">'lib'</code></div>
+<div class="line number24 index23 alt1"><code class="js spaces">  </code><code class="js plain">-r          generate (relocatable) object file</code></div>
+<div class="line number25 index24 alt2"><code class="js spaces">  </code><code class="js plain">-shared     generate a shared library/dll</code></div>
+<div class="line number26 index25 alt1"><code class="js spaces">  </code><code class="js plain">-rdynamic   export all global symbols to dynamic linker</code></div>
+<div class="line number27 index26 alt2"><code class="js spaces">  </code><code class="js plain">-soname     set name </code><code class="js keyword">for</code> <code class="js plain">shared library to be used at runtime</code></div>
+<div class="line number28 index27 alt1"><code class="js spaces">  </code><code class="js plain">-Wl,-opt[=val]  set linker option (see tcc -hh)</code></div>
+<div class="line number29 index28 alt2"><code class="js plain">Debugger options:</code></div>
+<div class="line number30 index29 alt1"><code class="js spaces">  </code><code class="js plain">-g          generate runtime debug info</code></div>
+<div class="line number31 index30 alt2"><code class="js spaces">  </code><code class="js plain">-b          compile </code><code class="js keyword">with</code> <code class="js plain">built-</code><code class="js keyword">in</code> <code class="js plain">memory and bounds checker (implies -g)</code></div>
+<div class="line number32 index31 alt1"><code class="js spaces">  </code><code class="js plain">-bt N       show N callers </code><code class="js keyword">in</code> <code class="js plain">stack traces</code></div>
+<div class="line number33 index32 alt2"><code class="js plain">Misc. options:</code></div>
+<div class="line number34 index33 alt1"><code class="js spaces">  </code><code class="js plain">-x[c|a|n]   specify type of the next infile</code></div>
+<div class="line number35 index34 alt2"><code class="js spaces">  </code><code class="js plain">-nostdinc   </code><code class="js keyword">do</code> <code class="js plain">not use standard system include paths</code></div>
+<div class="line number36 index35 alt1"><code class="js spaces">  </code><code class="js plain">-nostdlib   </code><code class="js keyword">do</code> <code class="js plain">not link </code><code class="js keyword">with</code> <code class="js plain">standard crt and libraries</code></div>
+<div class="line number37 index36 alt2"><code class="js spaces">  </code><code class="js plain">-Bdir       set tcc's private include/library dir</code></div>
+<div class="line number38 index37 alt1"><code class="js spaces">  </code><code class="js plain">-MD         generate dependency file </code><code class="js keyword">for</code> <code class="js plain">make</code></div>
+<div class="line number39 index38 alt2"><code class="js spaces">  </code><code class="js plain">-MF file    specify dependency file name</code></div>
+<div class="line number40 index39 alt1"><code class="js spaces">  </code><code class="js plain">-m32/64     defer to i386/x86_64 cross compiler</code></div>
+<div class="line number41 index40 alt2"><code class="js plain">Tools:</code></div>
+<div class="line number42 index41 alt1"><code class="js spaces">  </code><code class="js plain">create library  : tcc -ar [rcsv] lib.a files</code></div>
+<div class="line number43 index42 alt2"><code class="js spaces">  </code><code class="js plain">create def file : tcc -impdef lib.dll [-v] [-o lib.def]</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>4.在start.bat中輸入tcc</p>
+<p>5.接著修改SciTE編輯器中的<span>cpp.properties</span></p>
+<p>6.<span>把SciTE工能表Options往下點擊Open cpp.properties編輯設定檔案且勾選View-&gt;Line Number 編輯器中顯示行號，針對476行的設定進行修改</span></p>
+<p><span><img alt="" height="732" src="/images/1113.jpg" width="561"/></span></p>
+</div>
+</div>
+<p><span>7.完成設定之後，可在編輯器中加入hello.c，再利用Tools-&gt;Go執行</span></p>
+<div>
+<div class="syntaxhighlighter cpp" id="highlighter_907977">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="cpp color1 bold">int</code> <code class="cpp plain">main() {</code></div>
+<div class="line number2 index1 alt1"><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"Hello, world!\n"</code><code class="cpp plain">);</code></div>
+<div class="line number3 index2 alt2"><code class="cpp keyword bold">return</code> <code class="cpp plain">0;</code></div>
+<div class="line number4 index3 alt1"><code class="cpp plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</div>
+</div>
 <h2><span>W8</span></h2>
 <p><span></span></p>
 <h1>小組meeting</h1>
